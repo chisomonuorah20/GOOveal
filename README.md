@@ -22,13 +22,13 @@ GOOveal is a free, powerful standalone application that allows users to search b
 GOOveal emphasizes two main features, offering immediate utility to the user:
 1. **Live Text Option**: Enables the user to utilize the camera to detach, highlight, and analyze live words or numbers, allowing for focused evaluation.
 
-![alt text](image-1.png)
+![alt text](./Images/image-1.png)
 
 *Figure 1: live text option mockup for GOOveal.*
     
 2. **Visual Search Option**: Allows users to upload images of things, places, clothes, or people. GOOveal then searches the internet to reveal the same or similar results.
 
-![alt text](image-2.png)
+![alt text](./Images/image-2.png)
 
 *Figure 2: Visual search option mockup for GOOveal.*
    
