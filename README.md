@@ -1,17 +1,17 @@
 # GOOveal
-*A simple, privacy-first visual discovery app.*
+*A simple yet powerful visual discovery app.*
 
-Gooveal turns your phone camera into an instant understanding tool. Point it at text or objects to **translate, identify, and learn**—in seconds—through a clean, two-tab experience: **Text** and **Search**.
+Gooveal turns your phone camera into an instant understanding tool. Point it at text or objects to **translate, identify, and learn** in less than 3 seconds through a clean, two-tab experience which is **Text** and **Search**.
 
 ---
 
 ## Why it matters
-People meet unknown words, signs, and objects every day (travel, school, shopping) but existing tools feel hidden or too complex. Gooveal makes visual learning **simple, fast, and respectful of privacy**, so anyone can get answers without hunting through menus or sharing more data than necessary.
+GOOveal is a free, powerful feature that allows users to search based on what they see, using a photograph, the camera, or any image. It bridges the gap between the physical and digital worlds by gathering relevant content from the internet.
 
 ---
 
 ## Who it’s for
-- **Students** — translate notes, capture quotes.
+- **Students** — translate notes, capture quotes etc.
 - **Travelers** — read menus, signs, labels abroad.
 - **Creators & shoppers** — find similar items or learn about products.
 - **Curious people** — identify landmarks, objects, artwork.
@@ -19,11 +19,12 @@ People meet unknown words, signs, and objects every day (travel, school, shoppin
 ---
 
 ## Key features
-- **Live Text Translation** – highlight text in camera view, tap to Translate/Copy/Share.
-- **Visual Search** – snap an item to see “Buy / Learn / Save” results.
-- **Save & Collections** – keep discoveries organized for later.
-- **Explain the Match** – a small “Why this match” note builds trust.
-- **Privacy Controls** – on-device OCR by default; cloud search is opt-in.
+Gooveal emphasizes two main features, offering immediate utility to the user:
+1. **Live Text Option**: Enables the user to utilize the camera to detach, highlight, and analyze live words or numbers, allowing for focused evaluation.
+    - **User Story**: As a student, I want to capture and analyze specific text from a printed textbook so I can easily copy it without manual typing.
+2. **Visual Search Option**: Allows users to upload images of things, places, clothes, or people. Gooveal then searches the internet to reveal the same or similar results.
+    - **User Story**  As a shopper, I want to upload a picture of an outfit I like so I can find its source or comparable items to purchase online.
+
 
 ---
 
