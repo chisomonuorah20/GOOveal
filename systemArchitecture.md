@@ -1,5 +1,5 @@
 # Gooveal — System Architecture
-*A lightweight, privacy-first visual discovery app.*
+*A simple yet powerful visual discovery app.*
 
 This document outlines the **frontend, backend, database**, **component communication**, and **feasibility** for Gooveal’s MVP.
 
@@ -7,22 +7,29 @@ This document outlines the **frontend, backend, database**, **component communic
 
 ## 1) Stack Summary
 **Frontend (Mobile)**
-- React Native (Expo), React Navigation
-- Camera: Expo Camera (or RN Camera)
-- On-device OCR: Google ML Kit (Android) / Apple Vision (iOS)
+- **Framework**: React Native (Expo)
+- **Language and Tooling**: TypeScript, React Navigation, Expo Camera
+- **OCR (on device)**: Google ML Kit – Text Recognition v2 (bridged in RN)
+- **State and Data Fetching**: @tanstack/react-query
+- **Auth SDK**: Firebase Authentication
+- **Analytics and Crashes**: Firebase Analytics, Sentry React Native
 
-**Backend (API Gateway)**
-- Node.js + Express (or Firebase Cloud Functions)
-- Responsibilities: translate proxy, visual search proxy, auth verification, analytics
+**Backend (API Gateway & Integration Layer)**
+- **Runtime and Framework**: Node.js v20 + Express.js
+- **Deployment**: Vercel Serverless Functions
+- **Responsibilities**: `/translate`, `/visual-search`, `/save`, auth token verification, rate limiting, analytics logging
+- **SDKsLibraries**: firebase-admin, axios, express-rate-limit
 
 **Database & Storage**
-- Firebase Authentication
-- Firestore (users, saved results, events)
-- (Optional) Firebase Storage/S3 for cached thumbnails
+- **Auth**: Firebase Authentication
+- **Database**: Firebase Firestore (users, saved results, events)
+- **File Storage**: Firebase Storage (image thumbnails only)
+- **CI/CD**: GitHub Actions (lint, test, deploy)
+- **Mobile builds**: Expo EAS Build
 
-**External Services (v1)**
-- Translation: DeepL or Google Translate API
-- Visual Search: Clarifai / ACRCloud (swap to CLIP + Vector DB later)
+**External AI/ML Services**
+- **Translation**: DeepL API
+- **Visual Search**: Clarifai Imaage Recognition API
 
 ---
 
