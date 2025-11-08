@@ -1,7 +1,7 @@
 # GOOveal
 *A simple yet powerful visual discovery app.*
 
-Gooveal turns your phone camera into an instant understanding tool. Point it at text or objects to **translate, identify, and learn** in less than 3 seconds through a clean, two-tab experience which is **Text** and **Search**.
+GOOveal turns your phone camera into an instant understanding tool. Point it at text or objects to **translate, identify, and learn** in less than 3 seconds through a clean, two-tab experience which is **Text** and **Search**.
 
 ---
 
@@ -19,10 +19,10 @@ GOOveal is a free, powerful standalone application that allows users to search b
 ---
 
 ## Key features
-Gooveal emphasizes two main features, offering immediate utility to the user:
+GOOveal emphasizes two main features, offering immediate utility to the user:
 1. **Live Text Option**: Enables the user to utilize the camera to detach, highlight, and analyze live words or numbers, allowing for focused evaluation.
     - **User Story**: As a student, I want to capture and analyze specific text from a printed textbook so I can easily copy it without manual typing.
-2. **Visual Search Option**: Allows users to upload images of things, places, clothes, or people. Gooveal then searches the internet to reveal the same or similar results.
+2. **Visual Search Option**: Allows users to upload images of things, places, clothes, or people. GOOveal then searches the internet to reveal the same or similar results.
     - **User Story**  As a shopper, I want to upload a picture of an outfit I like so I can find its source or comparable items to purchase online.
 
 
@@ -54,7 +54,7 @@ Gooveal emphasizes two main features, offering immediate utility to the user:
 
 ---
 
-## How Gooveal works (at a glance)
+## How GOOveal works (at a glance)
 
 1. **Onboarding**: Users are prompted to **sign up** or **log in** to ensure **search history** is preserved.
 2. **Landing Page**: A minimalist page featuring only a **camera icon**.
