@@ -1,5 +1,4 @@
 # GOOveal
-# Gooveal
 *A simple, privacy-first visual discovery app.*
 
 Gooveal turns your phone camera into an instant understanding tool. Point it at text or objects to **translate, identify, and learn**—in seconds—through a clean, two-tab experience: **Text** and **Search**.
