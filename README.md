@@ -6,7 +6,7 @@ Gooveal turns your phone camera into an instant understanding tool. Point it at 
 ---
 
 ## Why it matters
-GOOveal is a free, powerful feature that allows users to search based on what they see, using a photograph, the camera, or any image. It bridges the gap between the physical and digital worlds by gathering relevant content from the internet.
+GOOveal is a free, powerful standalone application that allows users to search based on what they see, using a photograph, the camera, or any image. It bridges the gap between the physical and digital worlds by gathering relevant content from the internet.
 
 ---
 
@@ -28,33 +28,35 @@ Gooveal emphasizes two main features, offering immediate utility to the user:
 
 ---
 
-## Technologies (current plan)
-- **App:** React Native (Android & iOS)
-- **On-device OCR:** Google ML Kit / Apple Vision
-- **Translation:** DeepL or Google Translate API (via backend proxy)
-- **Visual Search:** hosted API (e.g., Clarifai/ACR) in v1, upgradeable to CLIP + vector DB
-- **Backend:** Node.js + Express (API gateway & aggregation)
-- **Data:** Firebase/Firestore (saved results & preferences)
+## Technologies
+- **App**: React Native (Expo) – cross-platform for Android & iOS
+- **Programming Language**: TypeScript
+- **Navigation**: React Navigation
+- **Camera**: Expo Camera
+- **On-Device OCR**: Google ML Kit (Text Recognition v2)
+- **Translation API**: DeepL API (accessed through backend proxy)
+- **Visual Search Engine**: Clarifai Image Recognition API
+- **Backend Framework**: Node.js (v20) + Express.js
+- **Database**: Firebase Firestore (for users, saved results, and preferences)
+- **Authentication**: Firebase Authentication (Email & Google Sign-In)
+- **File Storage**: Firebase Storage (for saved image thumbnails)
+- **Hosting & Deployment**:
+
+    - **Backend**: Vercel (Serverless Functions)
+
+    - **Mobile App**: Expo EAS Build
+
+       **Analytics & Monitoring**: Firebase Analytics + Sentry React Native SDK
+
+       **Version Control**: Git & GitHub
+
+       **Continuous Integration**: GitHub Actions (lint, test, deploy)
 
 ---
 
 ## How Gooveal works (at a glance)
-1. Open the app → pick **Text** or **Search**.
-2. **Text:** on-device OCR highlights words → tap **Translate / Copy / Share**.
-3. **Search:** capture an image → backend requests visual matches → show **Buy / Learn / Save**.
-4. Save to Collections, export or revisit anytime.
 
----
-
-## Roadmap (MVP → v1)
-- **MVP:** Text translate/copy, basic visual search, Save & Collections, privacy toggles.
-- **v1:** “Why this match”, offline language packs, export to notes, improved latency.
-- **Later:** plant/animal ID, affiliate shopping feeds, learning cards.
-
----
-
-## Privacy
-- OCR runs **on-device** by default.
-- Cloud requests are **opt-in** and minimized (send fingerprints/embeddings, not raw images when possible).
-- Clear **Delete All Data** option in-app.
-
+1. **Onboarding**: Users are prompted to **sign up** or **log in** to ensure **search history** is preserved.
+2. **Landing Page**: A minimalist page featuring only a **camera icon**.
+3. **Search Mode Selection**: Clicking the icon leads to a choice between the **Text Tab** (Live Text) and the **Search Tab** (Visual Search).
+4. **Result Handling**: For all search types (items, location, or people), users have the option to save the results for later or click the results to be taken directly to the external source.
